@@ -46,9 +46,9 @@ class Translator:
                     Dictionary mapping protocol or protocol and host to the URL of the proxy
                     For example ``{'http': 'foo.bar:3128', 'http://host.name': 'foo.bar:4012'}``
     :param raise_exception: if `True` then raise exception if smth will go wrong
-    :type raise_exception: boolean
+    :type raise_exception: boolean,1
     """
-
+    
     def __init__(self, service_urls=None, user_agent=DEFAULT_USER_AGENT,
                  raise_exception=DEFAULT_RAISE_EXCEPTION,
                  proxies: typing.Dict[str,httpcore.AsyncHTTPProxy] = None,
